@@ -1,6 +1,7 @@
 import './App.css'
 import { Suspense, lazy } from 'react'
 import { Button } from 'antd';
+import icon from '@/assets/logo.svg';
 
 // Works also with SSR as expected
 const Card = lazy(() => import('./Card'))
@@ -10,7 +11,7 @@ function App() {
     <>
       <div>
         <a href="https://vite.dev" target="_blank">
-          <img src="/logo.svg" className="logo" alt="Vite logo" />
+          <img src={icon} className="logo" alt="Vite logo" />
         </a>
       </div>
       <h1>Vite + React</h1>
